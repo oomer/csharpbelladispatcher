@@ -23,7 +23,6 @@
     <PackageReference Include="skiasharp" Version="2.88.7" />
   </ItemGroup>
   <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
-    <Copy SourceFiles="resources/chair_swan.bsz" DestinationFolder="$(OutDir)" />
     <Copy SourceFiles="../bella_rhino.rhp/libbella_dotnet_native.dylib" DestinationFolder="$(OutDir)" />
   </Target>
 </Project>
